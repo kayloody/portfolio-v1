@@ -32,6 +32,11 @@ export default function Head() {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#738582" />
       <meta name="msapplication-TileColor" content="#738582" />
       <meta name="theme-color" content="#f1f1f1" />
+
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap');
+      </style>
     </Helmet>
   )
 }
