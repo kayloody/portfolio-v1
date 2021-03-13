@@ -37,6 +37,11 @@ export default function Head() {
         @import
         url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;800&display=swap');
       </style>
+
+      <script
+        src="https://kit.fontawesome.com/7adfda7d68.js"
+        crossorigin="anonymous"
+      ></script>
     </Helmet>
   )
 }
