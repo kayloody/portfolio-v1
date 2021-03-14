@@ -20,7 +20,7 @@ export default function Logo() {
                 transform="translate(-90.413 -167.698)"
                 fill="none"
                 stroke="#6b807c"
-                stroke-width="3.5"
+                strokeWidth="3.5"
               />
               <path
                 id="path817-9-2"
@@ -28,7 +28,7 @@ export default function Logo() {
                 transform="translate(-95.797 -148.647)"
                 fill="none"
                 stroke="#6b807c"
-                stroke-width="3.5"
+                strokeWidth="3.5"
               />
             </g>
             <g id="g1267-3-9" transform="translate(92.204 31.922) rotate(90)">
@@ -38,7 +38,7 @@ export default function Logo() {
                 transform="translate(7.747)"
                 fill="none"
                 stroke="#6b807c"
-                stroke-width="3.5"
+                strokeWidth="3.5"
               />
               <path
                 id="path817-9-0-9"
@@ -46,7 +46,7 @@ export default function Logo() {
                 transform="translate(0 27.413)"
                 fill="none"
                 stroke="#6b807c"
-                stroke-width="3.5"
+                strokeWidth="3.5"
               />
             </g>
           </g>
