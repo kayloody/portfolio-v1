@@ -13,9 +13,16 @@ export default function Home() {
       <Head />
 
       <main>
-        <div className={styles.navContainer}>
+        <div className={styles.headerContainer}>
           <header>
             <Logo />
+
+            <nav className={styles.headerNav}>
+              <a href="#projects">projects</a>
+              <a href="#skills">skills</a>
+              <a href="#contact">contact</a>
+            </nav>
+
             <div>
               <ul>
                 <li>
@@ -61,10 +68,34 @@ export default function Home() {
           </div>
 
           <div className={styles.heroButtons}>
-            <button>view projects</button>
-            <p>contact me</p>
+            <a className={styles.heroButtonProjects} href="#projects">
+              view projects
+            </a>
+            <a className={styles.heroButtonContact} href="#contact">
+              contact me
+            </a>
           </div>
         </section>
+
+        <section id="projects" className={styles.projects}>
+          a
+        </section>
+        <section id="skills" className={styles.skills}>
+          b
+        </section>
+        <section id="contact" className={styles.contact}>
+          c
+        </section>
+
+        <div className={styles.footerNavContainer}>
+          <nav className={styles.footerNav}>
+            <a href="#projects">projects</a>
+            <div className={styles.vl}></div>
+            <a href="#skills">skills</a>
+            <div className={styles.vl}></div>
+            <a href="#contact">contact</a>
+          </nav>
+        </div>
       </main>
 
       <Footer />
