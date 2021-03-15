@@ -403,15 +403,43 @@
 
         padding: 0.75em;
         margin-bottom: 1em;
+
+        border: solid 0.1em transparent;
+
+        &:focus {
+          border: solid 0.1em #738582;
+        }
       }
 
-      input[type="submit"] {
-        background: #AC8E8E;
+      .formSend{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        span {
+          color: #f1f1f1;
+          margin: auto;
+        }
 
-        padding: 0.75em 4ch 0.75em 4ch;
+        button {
+          background: #AC8E8E;
 
-        font-weight: 500;
-        color: #f1f1f1;
+          padding: 0.75em 4ch 0.75em 4ch;
+
+          font-weight: 500;
+          color: #f1f1f1;
+
+          cursor: pointer;
+
+          &:hover {
+            background: #9a7f7f;
+          }
+          &:active {
+            background: #b49999;
+          }
+        }
       }
     }
 

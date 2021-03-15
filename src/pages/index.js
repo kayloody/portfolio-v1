@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+import emailjs from "emailjs-com"
 import Head from "../components/Head"
 import Logo from "../components/svg/Logo"
 import TriangleMain from "../components/svg/TriangleMain"
@@ -10,6 +11,40 @@ import * as styles from "../styles/index.module.css"
 import swftliMeImg from "../img/projects/swftli-me.jpg"
 
 export default function Home() {
+  const [contactStatus, setContactStatus] = useState("")
+
+  const sendEmail = e => {
+    e.preventDefault()
+
+    const formData = e.target
+
+    if (
+      formData.name.value === "" ||
+      formData.email.value === "" ||
+      formData.message.value === ""
+    ) {
+      setContactStatus("Please fill all fields.")
+    } else {
+      emailjs
+        .sendForm(
+          process.env.GATSBY_EMAILJS_SERVICE,
+          process.env.GATSBY_EMAILJS_TEMPLATE,
+          formData,
+          process.env.GATSBY_EMAILJS_USER
+        )
+        .then(
+          result => {
+            setContactStatus("Message sent. Thank you!")
+            console.log(contactStatus)
+          },
+          error => {
+            setContactStatus("Sorry, please try again.")
+            console.log(contactStatus)
+          }
+        )
+    }
+  }
+
   return (
     <div>
       <Head />
@@ -282,13 +317,16 @@ export default function Home() {
                 Feel free to contact me if you are interested or have any
                 questions.
               </p>
-              <form>
+              <form onSubmit={sendEmail}>
                 <div className={styles.formPerson}>
                   <input type="text" name="name" placeholder="Name" />
                   <input type="text" name="email" placeholder="Email" />
                 </div>
                 <textarea name="message" placeholder="Message" />
-                <input type="submit" value="send" />
+                <div className={styles.formSend}>
+                  <span>{contactStatus}</span>
+                  <button type="submit">send</button>
+                </div>
               </form>
             </div>
 
@@ -328,7 +366,7 @@ export default function Home() {
                 </a>
               </div>
               <hr />
-              <a href={swftliMeImg} target="_blank">
+              <a href={swftliMeImg} target="_blank" rel="noreferrer">
                 <i className="fas fa-file-pdf fa-fw" />
                 <span>resume</span>
               </a>
