@@ -1,0 +1,507 @@
+.portfolioContainer {
+  width: 100%;
+  //   max-width: 800px;
+}
+
+.headerContainer {
+  width: 100%;
+
+  background: #738582;
+
+  .headerNav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5em;
+    color: #ffffff;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        display: block;
+        padding-left: 1.2em;
+
+        font-size: 1.75em;
+      }
+    }
+  }
+}
+
+.footerNavContainer {
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+
+  z-index: 999;
+
+  .footerNav {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background: #738582;
+    color: #ffffff;
+
+    padding: 1em;
+
+    .vl {
+      border-left: 2px solid #ffffff;
+      height: 1em;
+    }
+  }
+}
+
+.hero {
+  height: calc(100vh - (3em + 1.75em) - (2em + 1.6em));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 1.5em 0 1.5em;
+
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #heroConsole {
+      font-size: 0.75em;
+      font-weight: 800;
+      color: #ac8e8e;
+    }
+
+    h1 {
+      margin: 0.3em 0 0.1em 0;
+
+      font-size: 3.3em;
+      font-weight: 800;
+      line-height: 1em;
+    }
+
+    h2 {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+      font-weight: 400;
+    }
+
+    #heroAbout {
+      font-weight: 300;
+      line-height: 1.3em;
+    }
+  }
+
+  .heroButtons {
+    margin-top: 4em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 0.75em;
+    font-weight: 500;
+
+    .heroButtonProjects {
+      margin-right: 1.5em;
+      padding: 0.75em 1.5em 0.75em 1.5em;
+
+      background: #738582;
+
+      color: #ffffff;
+
+      &:hover {
+        background: #6b807c;
+      }
+      &:active {
+        background: #819793;
+      }
+    }
+
+    .heroButtonContact {
+      color: #738582;
+    }
+  }
+}
+
+.sectionTitle {
+  font-size: 5em;
+  color: #ac8e8e;
+  opacity: 15%;
+
+  position: absolute;
+}
+
+.projectsContainer {
+  position: relative;
+  overflow: hidden;
+
+  .sectionTitle {
+    text-align: right;
+    right: -0.2em;
+    top: -0.2em;
+  }
+
+  .projects {
+    position: relative;
+
+    margin-top: 3.4em;
+    margin-left: calc(1.5em - 0.365em);
+    margin-right: calc(1.5em - 0.365em);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .project {
+      position: relative;
+      margin-top: 1em;
+
+      border: 0.375em solid #ffffff;
+
+      .projectMarker {
+        position: absolute;
+        top: 1em;
+
+        width: 0.375em;
+        height: 2em;
+
+        background: #738582;
+      }
+
+      .projectText {
+        display: flex;
+        flex-direction: column;
+
+        background: #f1f1f1;
+
+        padding: 1em;
+
+        .projectHeader {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .projectTitle {
+            h1 {
+              font-size: 0.75em;
+              font-weight: 400;
+              color: #738582;
+
+              text-transform: uppercase;
+            }
+
+            h2 {
+              font-size: 1.125em;
+              font-weight: 500;
+            }
+          }
+          .projectLinks {
+            display: flex;
+            flex-direction: row;
+
+            font-size: 1.25em;
+            color: #738582;
+
+            li {
+              display: block;
+              margin-left: 1em;
+            }
+          }
+        }
+
+        p {
+          font-size: 0.75em;
+          font-weight: 300;
+
+          margin: 0.5em 0 0.7em 0;
+        }
+
+        .projectTools {
+          display: flex;
+          flex-direction: row;
+
+          font-size: 0.75em;
+          font-weight: 300;
+          color: #738582;
+
+          .projectTool {
+            background: #dfdfdf;
+
+            margin-right: 0.5em;
+
+            padding: 0.3em 0.5em 0.3em 0.5em;
+          }
+        }
+      }
+      .projectImage {
+        width: 100%;
+      }
+    }
+
+    .projectsButton {
+      display: none;
+      width: fit-content;
+
+      margin-top: 1em;
+      padding: 0.75em 1.5em 0.75em 1.5em;
+
+      background: #738582;
+
+      font-size: 0.75em;
+      font-weight: 500;
+      color: #ffffff;
+
+      &:hover {
+        background: #6b807c;
+      }
+      &:active {
+        background: #819793;
+      }
+    }
+  }
+}
+
+.skillsContainer {
+  position: relative;
+
+  margin-top: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+
+  background: #f1f1f1;
+
+  padding: 1.25em;
+
+  .skillsMarker {
+    position: absolute;
+
+    right: -1.5em;
+    top: 0;
+
+    width: 1.5em;
+    height: 100%;
+    background: #738582;
+  }
+
+  .sectionTitle {
+    position: absolute;
+
+    left: -0.2em;
+    top: -0.1em;
+
+    z-index: 0;
+  }
+
+  .skillsBox {
+    position: relative;
+    margin-top: 2.6em;
+
+    background: #ffffff;
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 0 0 1.25em 1.25em;
+
+    .skillsGroup {
+      margin: 1.25em 1.25em 0 0;
+    }
+
+    h2 {
+      font-size: 0.75em;
+      font-weight: 600;
+      color: #738582;
+      text-transform: uppercase;
+
+      margin-bottom: 0.2em;
+    }
+
+    li {
+      font-size: 0.75em;
+      font-weight: 300;
+    }
+  }
+}
+
+.contactContainer {
+  position: relative;
+  
+  margin-top: 2em;
+  width: 100vw;
+  overflow: hidden;
+
+  padding-top: 3.4em;
+
+  .sectionTitle {
+    position: absolute;
+    text-align: right;
+    right: 0em;
+    margin-top: -0.8em;
+  }
+
+  .formContainer {
+    position: relative;
+    background: #738582;
+  
+    padding: 1.25em 2.5em 1.25em 2.5em;
+
+    h2 {
+      font-weight: 600;
+      color: #f1f1f1;
+    }
+
+    p {
+      font-size: 0.75em;
+      font-weight: 300;
+      color: #f1f1f1;
+
+      margin-top: 1em;
+    }
+
+    form {
+      font-size: 0.75em;
+      font-weight: 400;
+      color: #738582;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      width: 100%;
+
+      .formPerson {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+
+        margin-top: 1.5em;
+      }
+
+      input[type="text"], textarea {
+        background: #f1f1f1;
+
+        box-sizing: border-box;
+        width: 100%;
+
+        padding: 0.75em;
+        margin-bottom: 1em;
+
+        border: solid 0.1em transparent;
+
+        &:focus {
+          border: solid 0.1em #000000;
+        }
+      }
+
+      textarea {
+        resize: none;
+        height: calc(5em + 1.5em);
+      }
+
+      .formSend{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        span {
+          color: #f1f1f1;
+          margin: auto;
+        }
+
+        button {
+          background: #AC8E8E;
+
+          padding: 0.75em 4ch 0.75em 4ch;
+
+          font-weight: 500;
+          color: #f1f1f1;
+
+          cursor: pointer;
+
+          &:hover {
+            background: #9a7f7f;
+          }
+          &:active {
+            background: #b49999;
+          }
+        }
+      }
+    }
+
+    .formMarker {
+      position: absolute;
+
+      left: 1.5em;
+      top: -1.25em;
+
+      width: 0.125em;
+      height: 100%;
+
+      background: #f1f1f1;
+    }
+  }
+
+  .contactOthers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 2.5em;
+    margin-top: 1.25em;
+
+    .contactSocials {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      margin-bottom: 0.8em;
+
+      i {
+        font-size: 1.4em;
+        margin-right: 0.3em;
+      }
+      span {
+        font-weight: 500;
+      }
+    }
+
+    hr
+    {
+      border: 2px solid #000000;
+      width: 100%;
+
+      margin-bottom: 0.8em;
+    }
+  }
+}
+
+.triangle {
+  display: none;
+}
