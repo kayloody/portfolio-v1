@@ -34,7 +34,7 @@ export default function Home() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fab fa-github"></i>
+                      <i className="fab fa-github" />
                     </a>
                   </li>
                   <li>
@@ -43,7 +43,7 @@ export default function Home() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fab fa-linkedin"></i>
+                      <i className="fab fa-linkedin" />
                     </a>
                   </li>
                   <li>
@@ -52,7 +52,7 @@ export default function Home() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fab fa-twitter"></i>
+                      <i className="fab fa-twitter" />
                     </a>
                   </li>
                 </ul>
@@ -114,7 +114,7 @@ export default function Home() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <i className="fas fa-external-link-alt"></i>
+                          <i className="fas fa-external-link-alt" />
                         </a>
                       </li>
                       <li>
@@ -123,7 +123,7 @@ export default function Home() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <i className="fab fa-github"></i>
+                          <i className="fab fa-github" />
                         </a>
                       </li>
                     </ul>
@@ -166,7 +166,7 @@ export default function Home() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <i className="fas fa-external-link-alt"></i>
+                          <i className="fas fa-external-link-alt" />
                         </a>
                       </li>
                       <li>
@@ -175,7 +175,7 @@ export default function Home() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <i className="fab fa-github"></i>
+                          <i className="fab fa-github" />
                         </a>
                       </li>
                     </ul>
@@ -204,23 +204,135 @@ export default function Home() {
               <a className={styles.projectsButton} href="#projects">
                 view more
               </a>
-
-              <a className={styles.projectsButton} href="#projects">
-                view more
-              </a>
-
-              <a className={styles.projectsButton} href="#projects">
-                view more
-              </a>
             </div>
           </section>
 
           <section id="skills" className={styles.skillsContainer}>
-            b
+            <div className={styles.skillsMarker}></div>
+
+            <h1 className={styles.sectionTitle}>skills</h1>
+
+            <div className={styles.skillsBox}>
+              <div className={styles.skillsGroup}>
+                <h2>Languages</h2>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS/SCSS</li>
+                  <li>PHP</li>
+                </ul>
+              </div>
+
+              <div className={styles.skillsGroup}>
+                <h2>Frameworks/Environments</h2>
+                <ul>
+                  <li>React</li>
+                  <li>Gatsby</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+
+              <div className={styles.skillsGroup}>
+                <h2>Databases</h2>
+                <ul>
+                  <li>NoSQL (MongoDB)</li>
+                  <li>PostgreSQL (SQL)</li>
+                </ul>
+              </div>
+
+              <div className={styles.skillsGroup}>
+                <h2>Protocols</h2>
+                <ul>
+                  <li>Rest API</li>
+                  <li>GraphQL</li>
+                </ul>
+              </div>
+
+              <div className={styles.skillsGroup}>
+                <h2>Tools</h2>
+                <ul>
+                  <li>Bash</li>
+                  <li>Git/GitHub</li>
+                  <li>Adobe XD</li>
+                  <li>Figma</li>
+                  <li>Insomnia</li>
+                </ul>
+              </div>
+
+              <div className={styles.skillsGroup}>
+                <h2>Miscellaneous</h2>
+                <ul>
+                  <li>Passport.js</li>
+                  <li>TensorFlow.js</li>
+                </ul>
+              </div>
+            </div>
           </section>
 
           <section id="contact" className={styles.contactContainer}>
-            c
+            <h1 className={styles.sectionTitle}>contact</h1>
+
+            <div className={styles.formContainer}>
+              <div className={styles.formMarker}></div>
+              <h2>I'm available for work, get in touch.</h2>
+              <p>
+                I'm looking for frontend, backend or full-stack opportunities.
+                Feel free to contact me if you are interested or have any
+                questions.
+              </p>
+              <form>
+                <div className={styles.formPerson}>
+                  <input type="text" name="name" placeholder="Name" />
+                  <input type="text" name="email" placeholder="Email" />
+                </div>
+                <textarea name="message" placeholder="Message" />
+                <input type="submit" value="send" />
+              </form>
+            </div>
+
+            <div className={styles.contactOthers}>
+              <div className={styles.contactSocials}>
+                <a
+                  href="mailto: khaled@alamoodi.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fas fa-envelope fa-fw" />
+                  <span>khaled@alamoodi.io</span>
+                </a>
+                <a
+                  href="https://linkedin.com/in/alamoodi"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-linkedin fa-fw" />
+                  <span>alamoodi</span>
+                </a>
+                <a
+                  href="https://github.com/kayloody"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-github fa-fw" />
+                  <span>kayloody</span>
+                </a>
+                <a
+                  href="https://twitter.com/kayloody"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-twitter fa-fw" />
+                  <span>kayloody</span>
+                </a>
+              </div>
+              <hr />
+              <a href={swftliMeImg} target="_blank">
+                <i className="fas fa-file-pdf fa-fw" />
+                <span>resume</span>
+              </a>
+            </div>
           </section>
 
           <div className={styles.footerNavContainer}>
