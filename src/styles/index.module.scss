@@ -251,6 +251,7 @@
     }
 
     .projectsButton {
+      display: none;
       width: fit-content;
 
       margin-top: 1em;
@@ -407,8 +408,13 @@
         border: solid 0.1em transparent;
 
         &:focus {
-          border: solid 0.1em #738582;
+          border: solid 0.1em #000000;
         }
+      }
+
+      textarea {
+        resize: none;
+        height: calc(5em + 1.5em);
       }
 
       .formSend{
