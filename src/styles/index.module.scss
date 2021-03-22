@@ -65,7 +65,6 @@
 
 .hero {
   height: calc(100vh - (3em + 1.75em) - (2em + 1.6em));
-  height: calc((var(--vh, 1vh) * 100) - (3em + 1.75em) - (2em + 1.6em));
 
   display: flex;
   flex-direction: column;
