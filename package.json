@@ -18,6 +18,7 @@
     "emailjs-com": "^2.6.4",
     "gatsby": "^3.0.1",
     "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"

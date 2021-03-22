@@ -52,9 +52,13 @@
     align-items: center;
 
     background: #738582;
-    color: #ffffff;
 
     padding: 1em;
+
+    button {
+      color: #ffffff;
+      cursor: pointer;
+    }
 
     .vl {
       border-left: 2px solid #ffffff;
@@ -65,11 +69,6 @@
 
 .hero {
   height: calc(100vh - (3em + 1.75em) - (2em + 1.6em));
-  @supports (-webkit-appearance: none) {
-    .os-android & {
-      height: calc(100vh - 56px + (3em + 1.75em) - (2em + 1.6em));
-    }
-  }
 
   display: flex;
   flex-direction: column;
@@ -126,6 +125,8 @@
 
       color: #ffffff;
 
+      cursor: pointer;
+
       &:hover {
         background: #6b807c;
       }
@@ -136,6 +137,15 @@
 
     .heroButtonContact {
       color: #738582;
+
+      cursor: pointer;
+
+      &:hover {
+        color: #6b807c;
+      }
+      &:active {
+        color: #819793;
+      }
     }
   }
 }
@@ -154,7 +164,7 @@
 
   .sectionTitle {
     text-align: right;
-    right: 0;
+    right: 0.05em;
     top: -0.2em;
   }
 
@@ -301,7 +311,7 @@
   .sectionTitle {
     position: absolute;
 
-    left: -0.3em;
+    left: -0.25em;
     top: -0.1em;
 
     z-index: 0;
@@ -347,7 +357,7 @@
   position: relative;
 
   margin-top: 2em;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 
   padding-top: 3.4em;
@@ -355,7 +365,7 @@
   .sectionTitle {
     position: absolute;
     text-align: right;
-    right: 0;
+    right: 0.05em;
     margin-top: -0.8em;
   }
 

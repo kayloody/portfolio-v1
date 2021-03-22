@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import emailjs from "emailjs-com"
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 import Head from "../components/Head"
 import Logo from "../components/svg/Logo"
 import TriangleMain from "../components/svg/TriangleMain"
@@ -56,9 +58,9 @@ export default function Home() {
               <Logo />
 
               <nav className={styles.headerNav}>
-                <a href="#projects">projects</a>
-                <a href="#skills">skills</a>
-                <a href="#contact">contact</a>
+                <button onClick={() => scrollTo("#projects")}>projects</button>
+                <button onClick={() => scrollTo("#skills")}>projects</button>
+                <button onClick={() => scrollTo("#contact")}>projects</button>
               </nav>
 
               <div>
@@ -98,7 +100,6 @@ export default function Home() {
               <TriangleMain />
             </div>
           </div>
-
           <section className={styles.hero}>
             <div className={styles.heroText}>
               <p id={styles.heroConsole}>
@@ -119,15 +120,21 @@ export default function Home() {
             </div>
 
             <div className={styles.heroButtons}>
-              <a className={styles.heroButtonProjects} href="#projects">
+              <button
+                className={styles.heroButtonProjects}
+                onClick={() => scrollTo("#projects")}
+              >
                 view projects
-              </a>
-              <a className={styles.heroButtonContact} href="#contact">
+              </button>
+              <button
+                className={styles.heroButtonContact}
+                button
+                onClick={() => scrollTo("#contact")}
+              >
                 contact me
-              </a>
+              </button>
             </div>
           </section>
-
           <section id="projects" className={styles.projectsContainer}>
             <h1 className={styles.sectionTitle}>projects</h1>
 
@@ -241,7 +248,6 @@ export default function Home() {
               </a>
             </div>
           </section>
-
           <section id="skills" className={styles.skillsContainer}>
             <div className={styles.skillsMarker}></div>
 
@@ -305,7 +311,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-
           <section id="contact" className={styles.contactContainer}>
             <h1 className={styles.sectionTitle}>contact</h1>
 
@@ -372,14 +377,13 @@ export default function Home() {
               </a>
             </div>
           </section>
-
           <div className={styles.footerNavContainer}>
             <nav className={styles.footerNav}>
-              <a href="#projects">projects</a>
+              <button onClick={() => scrollTo("#projects")}>projects</button>
               <div className={styles.vl}></div>
-              <a href="#skills">skills</a>
+              <button onClick={() => scrollTo("#skills")}>skills</button>
               <div className={styles.vl}></div>
-              <a href="#contact">contact</a>
+              <button onClick={() => scrollTo("#contact")}>contact</button>
             </nav>
           </div>
         </div>
