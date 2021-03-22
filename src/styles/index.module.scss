@@ -67,7 +67,7 @@
   height: calc(100vh - (3em + 1.75em) - (2em + 1.6em));
   @supports (-webkit-appearance: none) {
     .os-android & {
-      height: calc(100vh - 56px (3em + 1.75em) - (2em + 1.6em));
+      height: calc(100vh - 56px + (3em + 1.75em) - (2em + 1.6em));
     }
   }
 
