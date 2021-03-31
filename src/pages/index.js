@@ -135,6 +135,7 @@ export default function Home() {
               </button>
             </div>
           </section>
+
           <section id="projects" className={styles.projectsContainer}>
             <h1 className={styles.sectionTitle}>projects</h1>
 
@@ -248,6 +249,7 @@ export default function Home() {
               </a>
             </div>
           </section>
+
           <section id="skills" className={styles.skillsContainer}>
             <div className={styles.skillsMarker}></div>
 
@@ -311,6 +313,7 @@ export default function Home() {
               </div>
             </div>
           </section>
+
           <section id="contact" className={styles.contactContainer}>
             <h1 className={styles.sectionTitle}>contact</h1>
 
