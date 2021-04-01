@@ -262,7 +262,6 @@ export default function Home() {
                   <li>JavaScript</li>
                   <li>HTML</li>
                   <li>CSS/SCSS</li>
-                  <li>PHP</li>
                 </ul>
               </div>
 
@@ -281,7 +280,6 @@ export default function Home() {
                 <h2>Databases</h2>
                 <ul>
                   <li>NoSQL (MongoDB)</li>
-                  <li>PostgreSQL (SQL)</li>
                 </ul>
               </div>
 
@@ -289,7 +287,6 @@ export default function Home() {
                 <h2>Protocols</h2>
                 <ul>
                   <li>Rest API</li>
-                  <li>GraphQL</li>
                 </ul>
               </div>
 
@@ -301,6 +298,7 @@ export default function Home() {
                   <li>Adobe XD</li>
                   <li>Figma</li>
                   <li>Insomnia</li>
+                  <li>Trello</li>
                 </ul>
               </div>
 
@@ -308,7 +306,6 @@ export default function Home() {
                 <h2>Miscellaneous</h2>
                 <ul>
                   <li>Passport.js</li>
-                  <li>TensorFlow.js</li>
                 </ul>
               </div>
             </div>
