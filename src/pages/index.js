@@ -141,9 +141,8 @@ export default function Home() {
 
             <div className={styles.projects}>
               <div className={styles.project}>
-                <div className={styles.projectMarker}></div>
-
                 <div className={styles.projectText}>
+                  <div className={styles.projectMarker}></div>
                   <div className={styles.projectHeader}>
                     <div className={styles.projectTitle}>
                       <h1>Featured Project</h1>
@@ -192,10 +191,9 @@ export default function Home() {
                 ></img>
               </div>
 
-              <div className={styles.project}>
-                <div className={styles.projectMarker}></div>
-
+              <div className={`${styles.project} ${styles.projectEven}`}>
                 <div className={styles.projectText}>
+                  <div className={styles.projectMarker}></div>
                   <div className={styles.projectHeader}>
                     <div className={styles.projectTitle}>
                       <h1>Featured Project</h1>
@@ -266,7 +264,7 @@ export default function Home() {
               </div>
 
               <div className={styles.skillsGroup}>
-                <h2>Frameworks/Environments</h2>
+                <h2>Frameworks</h2>
                 <ul>
                   <li>React</li>
                   <li>Gatsby</li>
@@ -298,6 +296,7 @@ export default function Home() {
                   <li>Adobe XD</li>
                   <li>Figma</li>
                   <li>Insomnia</li>
+                  <li>DevTools</li>
                   <li>Trello</li>
                 </ul>
               </div>
