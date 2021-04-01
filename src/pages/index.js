@@ -316,7 +316,7 @@ export default function Home() {
 
             <div className={styles.formContainer}>
               <div className={styles.formMarker}></div>
-              <h2>I'm available for work, get in touch.</h2>
+              <h2>I'm available for work, let's get in touch.</h2>
               <p>
                 I'm looking for frontend, backend or full-stack opportunities.
                 Feel free to contact me if you are interested or have any
