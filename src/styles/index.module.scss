@@ -564,8 +564,10 @@
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-height: 400px) {
   .hero {
-    height: 100vh;
+    height: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
