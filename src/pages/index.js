@@ -55,13 +55,17 @@ export default function Home() {
         <div className={styles.portfolioContainer}>
           <div className={styles.headerContainer}>
             <header>
-              <Logo />
+              <div className={styles.headerLogoNav}>
+                <Logo />
 
-              <nav className={styles.headerNav}>
-                <button onClick={() => scrollTo("#projects")}>projects</button>
-                <button onClick={() => scrollTo("#skills")}>projects</button>
-                <button onClick={() => scrollTo("#contact")}>projects</button>
-              </nav>
+                <nav className={styles.headerNav}>
+                  <button onClick={() => scrollTo("#projects")}>
+                    projects
+                  </button>
+                  <button onClick={() => scrollTo("#skills")}>skills</button>
+                  <button onClick={() => scrollTo("#contact")}>contact</button>
+                </nav>
+              </div>
 
               <div>
                 <ul>
@@ -100,6 +104,7 @@ export default function Home() {
               <TriangleMain />
             </div>
           </div>
+
           <section className={styles.hero}>
             <div className={styles.heroText}>
               <p id={styles.heroConsole}>
@@ -135,14 +140,14 @@ export default function Home() {
               </button>
             </div>
           </section>
+
           <section id="projects" className={styles.projectsContainer}>
             <h1 className={styles.sectionTitle}>projects</h1>
 
             <div className={styles.projects}>
               <div className={styles.project}>
-                <div className={styles.projectMarker}></div>
-
                 <div className={styles.projectText}>
+                  <div className={styles.projectMarker}></div>
                   <div className={styles.projectHeader}>
                     <div className={styles.projectTitle}>
                       <h1>Featured Project</h1>
@@ -191,10 +196,9 @@ export default function Home() {
                 ></img>
               </div>
 
-              <div className={styles.project}>
-                <div className={styles.projectMarker}></div>
-
+              <div className={`${styles.project} ${styles.projectEven}`}>
                 <div className={styles.projectText}>
+                  <div className={styles.projectMarker}></div>
                   <div className={styles.projectHeader}>
                     <div className={styles.projectTitle}>
                       <h1>Featured Project</h1>
@@ -248,6 +252,7 @@ export default function Home() {
               </a>
             </div>
           </section>
+
           <section id="skills" className={styles.skillsContainer}>
             <div className={styles.skillsMarker}></div>
 
@@ -260,12 +265,11 @@ export default function Home() {
                   <li>JavaScript</li>
                   <li>HTML</li>
                   <li>CSS/SCSS</li>
-                  <li>PHP</li>
                 </ul>
               </div>
 
               <div className={styles.skillsGroup}>
-                <h2>Frameworks/Environments</h2>
+                <h2>Frameworks</h2>
                 <ul>
                   <li>React</li>
                   <li>Gatsby</li>
@@ -279,7 +283,6 @@ export default function Home() {
                 <h2>Databases</h2>
                 <ul>
                   <li>NoSQL (MongoDB)</li>
-                  <li>PostgreSQL (SQL)</li>
                 </ul>
               </div>
 
@@ -287,7 +290,6 @@ export default function Home() {
                 <h2>Protocols</h2>
                 <ul>
                   <li>Rest API</li>
-                  <li>GraphQL</li>
                 </ul>
               </div>
 
@@ -299,6 +301,8 @@ export default function Home() {
                   <li>Adobe XD</li>
                   <li>Figma</li>
                   <li>Insomnia</li>
+                  <li>DevTools</li>
+                  <li>Trello</li>
                 </ul>
               </div>
 
@@ -306,17 +310,17 @@ export default function Home() {
                 <h2>Miscellaneous</h2>
                 <ul>
                   <li>Passport.js</li>
-                  <li>TensorFlow.js</li>
                 </ul>
               </div>
             </div>
           </section>
+
           <section id="contact" className={styles.contactContainer}>
             <h1 className={styles.sectionTitle}>contact</h1>
 
             <div className={styles.formContainer}>
               <div className={styles.formMarker}></div>
-              <h2>I'm available for work, get in touch.</h2>
+              <h2>I'm available for work, let's get in touch.</h2>
               <p>
                 I'm looking for frontend, backend or full-stack opportunities.
                 Feel free to contact me if you are interested or have any

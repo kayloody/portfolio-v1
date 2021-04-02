@@ -32,6 +32,10 @@ export default function Head() {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#738582" />
       <meta name="msapplication-TileColor" content="#738582" />
       <meta name="theme-color" content="#f1f1f1" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      ></meta>
 
       <style>
         @import

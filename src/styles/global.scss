@@ -22,12 +22,24 @@
   }
 }
 
+html {
+  overflow: auto;
+}
+
 body {
   position: absolute;
 
   box-sizing: border-box;
   height: 100vh;
   width: 100%;
+
+  font-size: 16px;
+
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 footer {
@@ -49,6 +61,28 @@ footer {
 
     path {
       stroke: #ffffff;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    font-size: 30px !important;
+    max-width: 1320px;
+
+    margin: auto;
+
+    overflow-x: visible;
+  }
+
+  .logo {
+    svg {
+      height: 2em;
+      width: auto;
+
+      path {
+        stroke: #738582;
+      }
     }
   }
 }
