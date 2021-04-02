@@ -55,13 +55,17 @@ export default function Home() {
         <div className={styles.portfolioContainer}>
           <div className={styles.headerContainer}>
             <header>
-              <Logo />
+              <div className={styles.headerLogoNav}>
+                <Logo />
 
-              <nav className={styles.headerNav}>
-                <button onClick={() => scrollTo("#projects")}>projects</button>
-                <button onClick={() => scrollTo("#skills")}>projects</button>
-                <button onClick={() => scrollTo("#contact")}>projects</button>
-              </nav>
+                <nav className={styles.headerNav}>
+                  <button onClick={() => scrollTo("#projects")}>
+                    projects
+                  </button>
+                  <button onClick={() => scrollTo("#skills")}>skills</button>
+                  <button onClick={() => scrollTo("#contact")}>contact</button>
+                </nav>
+              </div>
 
               <div>
                 <ul>
@@ -100,6 +104,7 @@ export default function Home() {
               <TriangleMain />
             </div>
           </div>
+
           <section className={styles.hero}>
             <div className={styles.heroText}>
               <p id={styles.heroConsole}>
