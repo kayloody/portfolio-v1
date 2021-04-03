@@ -48,7 +48,7 @@ export default function Home() {
   }
 
   return (
-    <div lang="en">
+    <div>
       <Head />
 
       <main>

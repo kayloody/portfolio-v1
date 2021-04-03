@@ -3,7 +3,11 @@ import Helmet from "react-helmet"
 
 export default function Head() {
   return (
-    <Helmet>
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+    >
       {/* <!-- Primary Meta Tags --> */}
       <title>Khaled Al-Amoodi</title>
       <meta name="title" content="Khaled Al-Amoodi" />
