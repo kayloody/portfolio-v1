@@ -71,31 +71,31 @@ export default function Home() {
                 <ul>
                   <li>
                     <a
-                      name="header-github"
                       href="https://github.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
                     >
+                      <span className={styles.linkText}>GitHub</span>
                       <i className="fab fa-github" />
                     </a>
                   </li>
                   <li>
                     <a
-                      name="header-linkedin"
                       href="https://linkedin.com/in/alamoodi"
                       target="_blank"
                       rel="noreferrer"
                     >
+                      <span className={styles.linkText}>LinkedIn</span>
                       <i className="fab fa-linkedin" />
                     </a>
                   </li>
                   <li>
                     <a
-                      name="header-twitter"
                       href="https://twitter.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
                     >
+                      <span className={styles.linkText}>Twitter</span>
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
@@ -160,21 +160,25 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
-                          name="project-swftli-site"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
                         >
+                          <span className={styles.linkText}>
+                            swftli.me site
+                          </span>
                           <i className="fas fa-external-link-alt" />
                         </a>
                       </li>
                       <li>
                         <a
-                          name="project-swftli-github"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
                         >
+                          <span className={styles.linkText}>
+                            swftli.me GitHub
+                          </span>
                           <i className="fab fa-github" />
                         </a>
                       </li>
@@ -213,21 +217,25 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
-                          name="project-swftli-site"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
                         >
+                          <span className={styles.linkText}>
+                            swftli.me site
+                          </span>
                           <i className="fas fa-external-link-alt" />
                         </a>
                       </li>
                       <li>
                         <a
-                          name="project-swftli-github"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
                         >
+                          <span className={styles.linkText}>
+                            swftli.me GitHub
+                          </span>
                           <i className="fab fa-github" />
                         </a>
                       </li>
@@ -254,11 +262,7 @@ export default function Home() {
                 ></img>
               </div>
 
-              <a
-                name="projects-view-more"
-                className={styles.projectsButton}
-                href="#projects"
-              >
+              <a className={styles.projectsButton} href="#projects">
                 view more
               </a>
             </div>
@@ -353,49 +357,44 @@ export default function Home() {
               <div className={styles.contactOthers}>
                 <div className={styles.contactSocials}>
                   <a
-                    name="contact-email"
                     href="mailto: khaled@alamoodi.io"
                     target="_blank"
                     rel="noreferrer"
                   >
+                    <span className={styles.linkText}>Email</span>
                     <i className="fas fa-envelope fa-fw" />
                     <span>khaled@alamoodi.io</span>
                   </a>
                   <a
-                    name="contact-linkedin"
                     href="https://linkedin.com/in/alamoodi"
                     target="_blank"
                     rel="noreferrer"
                   >
+                    <span className={styles.linkText}>LinkedIn</span>
                     <i className="fab fa-linkedin fa-fw" />
                     <span>alamoodi</span>
                   </a>
                   <a
-                    name="contact-github"
                     href="https://github.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
                   >
+                    <span className={styles.linkText}>GitHub</span>
                     <i className="fab fa-github fa-fw" />
                     <span>kayloody</span>
                   </a>
                   <a
-                    name="contact-twitter"
                     href="https://twitter.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
                   >
+                    <span className={styles.linkText}>Twitter</span>
                     <i className="fab fa-twitter fa-fw" />
                     <span>kayloody</span>
                   </a>
                 </div>
                 <hr />
-                <a
-                  name="contact-resume"
-                  href={swftliMeImg}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={swftliMeImg} target="_blank" rel="noreferrer">
                   <i className="fas fa-file-pdf fa-fw" />
                   <span>resume</span>
                 </a>
