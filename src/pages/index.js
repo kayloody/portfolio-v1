@@ -71,6 +71,7 @@ export default function Home() {
                 <ul>
                   <li>
                     <a
+                      aria-label="GitHub"
                       href="https://github.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
@@ -80,6 +81,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
+                      aria-label="LinkedIn"
                       href="https://linkedin.com/in/alamoodi"
                       target="_blank"
                       rel="noreferrer"
@@ -89,6 +91,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
+                      aria-label="Twitter"
                       href="https://twitter.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
@@ -133,7 +136,6 @@ export default function Home() {
               </button>
               <button
                 className={styles.heroButtonContact}
-                button
                 onClick={() => scrollTo("#contact")}
               >
                 contact me
@@ -157,6 +159,7 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
+                          aria-label="swftli.me website"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
@@ -166,6 +169,7 @@ export default function Home() {
                       </li>
                       <li>
                         <a
+                          aria-label="swftli.me GitHub"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
@@ -208,6 +212,7 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
+                          aria-label="swftli.me website"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
@@ -217,6 +222,7 @@ export default function Home() {
                       </li>
                       <li>
                         <a
+                          aria-label="swftli.me GitHub"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
@@ -342,6 +348,7 @@ export default function Home() {
               <div className={styles.contactOthers}>
                 <div className={styles.contactSocials}>
                   <a
+                    aria-label="Email"
                     href="mailto: khaled@alamoodi.io"
                     target="_blank"
                     rel="noreferrer"
@@ -350,6 +357,7 @@ export default function Home() {
                     <span>khaled@alamoodi.io</span>
                   </a>
                   <a
+                    aria-label="LinkedIn"
                     href="https://linkedin.com/in/alamoodi"
                     target="_blank"
                     rel="noreferrer"
@@ -358,6 +366,7 @@ export default function Home() {
                     <span>alamoodi</span>
                   </a>
                   <a
+                    aria-label="GitHub"
                     href="https://github.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
@@ -366,6 +375,7 @@ export default function Home() {
                     <span>kayloody</span>
                   </a>
                   <a
+                    aria-label="Twitter"
                     href="https://twitter.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
@@ -375,9 +385,14 @@ export default function Home() {
                   </a>
                 </div>
                 <hr />
-                <a href={swftliMeImg} target="_blank" rel="noreferrer">
+                <a
+                  aria-label="Résumé"
+                  href={swftliMeImg}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fas fa-file-pdf fa-fw" />
-                  <span>resume</span>
+                  <span>résumé</span>
                 </a>
               </div>
             </div>
