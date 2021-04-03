@@ -71,6 +71,7 @@ export default function Home() {
                 <ul>
                   <li>
                     <a
+                      name="header-github"
                       href="https://github.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
@@ -80,6 +81,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
+                      name="header-linkedin"
                       href="https://linkedin.com/in/alamoodi"
                       target="_blank"
                       rel="noreferrer"
@@ -89,6 +91,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a
+                      name="header-twitter"
                       href="https://twitter.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
@@ -157,6 +160,7 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
+                          name="project-swftli-site"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
@@ -166,6 +170,7 @@ export default function Home() {
                       </li>
                       <li>
                         <a
+                          name="project-swftli-github"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
@@ -208,6 +213,7 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
+                          name="project-swftli-site"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
@@ -217,6 +223,7 @@ export default function Home() {
                       </li>
                       <li>
                         <a
+                          name="project-swftli-github"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
@@ -247,7 +254,11 @@ export default function Home() {
                 ></img>
               </div>
 
-              <a className={styles.projectsButton} href="#projects">
+              <a
+                name="projects-view-more"
+                className={styles.projectsButton}
+                href="#projects"
+              >
                 view more
               </a>
             </div>
@@ -342,6 +353,7 @@ export default function Home() {
               <div className={styles.contactOthers}>
                 <div className={styles.contactSocials}>
                   <a
+                    name="contact-email"
                     href="mailto: khaled@alamoodi.io"
                     target="_blank"
                     rel="noreferrer"
@@ -350,6 +362,7 @@ export default function Home() {
                     <span>khaled@alamoodi.io</span>
                   </a>
                   <a
+                    name="contact-linkedin"
                     href="https://linkedin.com/in/alamoodi"
                     target="_blank"
                     rel="noreferrer"
@@ -358,6 +371,7 @@ export default function Home() {
                     <span>alamoodi</span>
                   </a>
                   <a
+                    name="contact-github"
                     href="https://github.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
@@ -366,6 +380,7 @@ export default function Home() {
                     <span>kayloody</span>
                   </a>
                   <a
+                    name="contact-twitter"
                     href="https://twitter.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
@@ -375,7 +390,12 @@ export default function Home() {
                   </a>
                 </div>
                 <hr />
-                <a href={swftliMeImg} target="_blank" rel="noreferrer">
+                <a
+                  name="contact-resume"
+                  href={swftliMeImg}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fas fa-file-pdf fa-fw" />
                   <span>resume</span>
                 </a>

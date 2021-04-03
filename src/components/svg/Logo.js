@@ -4,7 +4,7 @@ import "../../styles/global.css"
 
 export default function Logo() {
   return (
-    <Link to="/" className="logo">
+    <Link name="home" to="/" className="logo">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="95.704"
