@@ -48,7 +48,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div lang="en">
       <Head />
 
       <main>
@@ -71,31 +71,31 @@ export default function Home() {
                 <ul>
                   <li>
                     <a
+                      aria-label="GitHub"
                       href="https://github.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <span className={styles.linkText}>GitHub</span>
                       <i className="fab fa-github" />
                     </a>
                   </li>
                   <li>
                     <a
+                      aria-label="LinkedIn"
                       href="https://linkedin.com/in/alamoodi"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <span className={styles.linkText}>LinkedIn</span>
                       <i className="fab fa-linkedin" />
                     </a>
                   </li>
                   <li>
                     <a
+                      aria-label="Twitter"
                       href="https://twitter.com/kayloody"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <span className={styles.linkText}>Twitter</span>
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
@@ -160,25 +160,21 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
+                          aria-label="swftli.me website"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <span className={styles.linkText}>
-                            swftli.me site
-                          </span>
                           <i className="fas fa-external-link-alt" />
                         </a>
                       </li>
                       <li>
                         <a
+                          aria-label="swftli.me GitHub"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <span className={styles.linkText}>
-                            swftli.me GitHub
-                          </span>
                           <i className="fab fa-github" />
                         </a>
                       </li>
@@ -217,25 +213,21 @@ export default function Home() {
                     <ul className={styles.projectLinks}>
                       <li>
                         <a
+                          aria-label="swftli.me website"
                           href="https://swftli.me"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <span className={styles.linkText}>
-                            swftli.me site
-                          </span>
                           <i className="fas fa-external-link-alt" />
                         </a>
                       </li>
                       <li>
                         <a
+                          aria-label="swftli.me GitHub"
                           href="https://github.com/kayloody/swftli-me"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <span className={styles.linkText}>
-                            swftli.me GitHub
-                          </span>
                           <i className="fab fa-github" />
                         </a>
                       </li>
@@ -357,46 +349,51 @@ export default function Home() {
               <div className={styles.contactOthers}>
                 <div className={styles.contactSocials}>
                   <a
+                    aria-label="Email"
                     href="mailto: khaled@alamoodi.io"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span className={styles.linkText}>Email</span>
                     <i className="fas fa-envelope fa-fw" />
                     <span>khaled@alamoodi.io</span>
                   </a>
                   <a
+                    aria-label="LinkedIn"
                     href="https://linkedin.com/in/alamoodi"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span className={styles.linkText}>LinkedIn</span>
                     <i className="fab fa-linkedin fa-fw" />
                     <span>alamoodi</span>
                   </a>
                   <a
+                    aria-label="GitHub"
                     href="https://github.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span className={styles.linkText}>GitHub</span>
                     <i className="fab fa-github fa-fw" />
                     <span>kayloody</span>
                   </a>
                   <a
+                    aria-label="Twitter"
                     href="https://twitter.com/kayloody"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span className={styles.linkText}>Twitter</span>
                     <i className="fab fa-twitter fa-fw" />
                     <span>kayloody</span>
                   </a>
                 </div>
                 <hr />
-                <a href={swftliMeImg} target="_blank" rel="noreferrer">
+                <a
+                  aria-label="Résumé"
+                  href={swftliMeImg}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fas fa-file-pdf fa-fw" />
-                  <span>resume</span>
+                  <span>résumé</span>
                 </a>
               </div>
             </div>
