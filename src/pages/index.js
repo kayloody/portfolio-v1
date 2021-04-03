@@ -136,7 +136,6 @@ export default function Home() {
               </button>
               <button
                 className={styles.heroButtonContact}
-                button
                 onClick={() => scrollTo("#contact")}
               >
                 contact me
