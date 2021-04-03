@@ -317,68 +317,69 @@ export default function Home() {
 
           <section id="contact" className={styles.contactContainer}>
             <h1 className={styles.sectionTitle}>contact</h1>
+            <div className={styles.contactContentContainer}>
+              <div className={styles.formContainer}>
+                <div className={styles.formMarker}></div>
+                <h2>I'm available for work, let's get in touch.</h2>
+                <p>
+                  I'm looking for frontend, backend or full-stack opportunities.
+                  Feel free to contact me if you are interested or have any
+                  questions.
+                </p>
+                <form onSubmit={sendEmail}>
+                  <div className={styles.formPerson}>
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="text" name="email" placeholder="Email" />
+                  </div>
+                  <textarea name="message" placeholder="Message" />
+                  <div className={styles.formSend}>
+                    <span>{contactStatus}</span>
+                    <button type="submit">send</button>
+                  </div>
+                </form>
+              </div>
 
-            <div className={styles.formContainer}>
-              <div className={styles.formMarker}></div>
-              <h2>I'm available for work, let's get in touch.</h2>
-              <p>
-                I'm looking for frontend, backend or full-stack opportunities.
-                Feel free to contact me if you are interested or have any
-                questions.
-              </p>
-              <form onSubmit={sendEmail}>
-                <div className={styles.formPerson}>
-                  <input type="text" name="name" placeholder="Name" />
-                  <input type="text" name="email" placeholder="Email" />
+              <div className={styles.contactOthers}>
+                <div className={styles.contactSocials}>
+                  <a
+                    href="mailto: khaled@alamoodi.io"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fas fa-envelope fa-fw" />
+                    <span>khaled@alamoodi.io</span>
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/alamoodi"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-linkedin fa-fw" />
+                    <span>alamoodi</span>
+                  </a>
+                  <a
+                    href="https://github.com/kayloody"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-github fa-fw" />
+                    <span>kayloody</span>
+                  </a>
+                  <a
+                    href="https://twitter.com/kayloody"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-twitter fa-fw" />
+                    <span>kayloody</span>
+                  </a>
                 </div>
-                <textarea name="message" placeholder="Message" />
-                <div className={styles.formSend}>
-                  <span>{contactStatus}</span>
-                  <button type="submit">send</button>
-                </div>
-              </form>
-            </div>
-
-            <div className={styles.contactOthers}>
-              <div className={styles.contactSocials}>
-                <a
-                  href="mailto: khaled@alamoodi.io"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fas fa-envelope fa-fw" />
-                  <span>khaled@alamoodi.io</span>
-                </a>
-                <a
-                  href="https://linkedin.com/in/alamoodi"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-linkedin fa-fw" />
-                  <span>alamoodi</span>
-                </a>
-                <a
-                  href="https://github.com/kayloody"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-github fa-fw" />
-                  <span>kayloody</span>
-                </a>
-                <a
-                  href="https://twitter.com/kayloody"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-twitter fa-fw" />
-                  <span>kayloody</span>
+                <hr />
+                <a href={swftliMeImg} target="_blank" rel="noreferrer">
+                  <i className="fas fa-file-pdf fa-fw" />
+                  <span>resume</span>
                 </a>
               </div>
-              <hr />
-              <a href={swftliMeImg} target="_blank" rel="noreferrer">
-                <i className="fas fa-file-pdf fa-fw" />
-                <span>resume</span>
-              </a>
             </div>
           </section>
           <div className={styles.footerNavContainer}>

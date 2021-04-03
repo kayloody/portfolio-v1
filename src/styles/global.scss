@@ -44,7 +44,6 @@ main {
 
 footer {
   width: 100%;
-  //   max-width: 800px;
 
   p {
     padding: 3em 0 6em 0;
@@ -67,7 +66,7 @@ footer {
 
 @media only screen and (min-width: 1000px) {
   main {
-    font-size: 30px !important;
+    font-size: 26px !important;
     max-width: 1320px;
 
     margin: auto;
@@ -84,5 +83,19 @@ footer {
         stroke: #738582;
       }
     }
+  }
+
+  footer {
+    p {
+      padding: 6em 0 2em 0;
+      font-size: 1em;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (max-height: 800px) and (min-width: 1000px) {
+  main {
+    font-size: 20px !important;
   }
 }

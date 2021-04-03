@@ -528,18 +528,18 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding-bottom: 1.5em;
+    padding-bottom: 4em;
 
     .projectText {
       margin-top: auto;
       margin-bottom: auto;
       margin-right: -10em;
       z-index: 2;
-      width: 43%;
+      width: 47%;
     }
 
     .projectImage {
-      max-width: 55%;
+      max-width: 50%;
     }
   }
 
@@ -564,6 +564,45 @@
       width: auto;
     }
   }
+
+  .contactContainer {
+    margin-top: 5em !important;
+
+    padding-top: 10em;
+
+    .sectionTitle {
+      margin-top: -0.84em;
+      right: 0em;
+    }
+
+    .contactContentContainer {
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+
+      .formContainer {
+        width: 62%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        padding-left: 3em;
+
+        .formPerson {
+          flex-direction: row;
+          justify-content: space-between;
+
+          input {
+            width: 49%;
+          }
+        }
+      }
+
+      .contactOthers {
+        width: 37%;
+        padding-left: 3em;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -572,7 +611,7 @@
     font-size: 0.8em;
 
     .headerLogoNav {
-      width: calc(100% - 400px);
+      width: calc(100% - 320px);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -625,7 +664,37 @@
   .hero {
     height: calc(100vh - (2.8em));
 
-    width: calc(100% - 450px);
+    width: calc(100% - 400px);
+  }
+
+  .sectionTitle {
+    font-size: 11em;
+  }
+
+  .projects {
+    margin-top: 6em !important;
+    .projectsContainer {
+      .sectionTitle {
+        right: 0em;
+      }
+    }
+  }
+
+  .skillsContainer {
+    width: calc(100% - 5em);
+    padding: 2.5em;
+    padding-right: calc(300px);
+
+    .skillsMarker {
+      right: 0;
+      left: calc(100% - 12em);
+      width: calc(60% - 22em);
+    }
+
+    .skillsBox {
+      width: calc(100% - 1.8em - 2em);
+      margin-top: 5.6em;
+    }
   }
 
   .footerNavContainer {
@@ -633,8 +702,7 @@
   }
 }
 
-@media screen and (max-height: 600px),
-  screen and (max-height: 900px) and (min-width: 1000px) {
+@media screen and (max-height: 600px) {
   .hero {
     height: 100%;
     margin-top: 1em;
