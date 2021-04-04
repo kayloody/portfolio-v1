@@ -99,6 +99,16 @@ export default function Home() {
                       <i className="fab fa-twitter" />
                     </a>
                   </li>
+                  <li>
+                    <a
+                      aria-label="swftli.me"
+                      href="https://swftli.me/kayloody"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className={styles.swftlime}></div>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </header>
@@ -179,12 +189,19 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-
                   <p>
                     swftli-me is a social media reference landing page (of which
-                    LinkTree and Carrd.co are examples).
+                    LinkTree and Carrd.co are examples). You can personalize
+                    your page, set your social media accounts and create cards
+                    to redirect to your links.
                   </p>
-
+                  <p>
+                    You can use the following credentials:
+                    <br />
+                    User: Visitor
+                    <br />
+                    Password: Visitor1$
+                  </p>
                   <div className={styles.projectTools}>
                     <span className={styles.projectTool}>React</span>
                     <span className={styles.projectTool}>Node.js</span>
@@ -381,6 +398,17 @@ export default function Home() {
                     rel="noreferrer"
                   >
                     <i className="fab fa-twitter fa-fw" />
+                    <span>kayloody</span>
+                  </a>
+                  <a
+                    aria-label="swftli.me"
+                    href="https://swftli.me/kayloody"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-fw">
+                      <div className={styles.swftlime} />
+                    </i>
                     <span>kayloody</span>
                   </a>
                 </div>

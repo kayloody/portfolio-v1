@@ -1,6 +1,10 @@
 .portfolioContainer {
   width: 100%;
   //   max-width: 800px;
+
+  .swftlime {
+    border-radius: 0.4em 0px 0.4em 0.4em;
+  }
 }
 
 .headerContainer {
@@ -26,12 +30,19 @@
     ul {
       display: flex;
       flex-direction: row;
+      align-items: center;
 
       li {
         display: block;
         padding-left: 1.2em;
 
         font-size: 1.75em;
+      }
+
+      .swftlime {
+        width: 0.75em;
+        height: 0.6em;
+        border: 0.15em #ffffff solid;
       }
     }
   }
@@ -495,6 +506,17 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
+      i {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }
+      .swftlime {
+        width: 0.7em;
+        height: 0.55em;
+        border: 0.15em #000000 solid;
+      }
     }
 
     a {
