@@ -12,4 +12,4 @@ Live version can be accessed at www.alamoodi.io
 - HTML
 - SCSS
 - Email.js (Handles email form)
-- Netlify (Host the live site)
+- Netlify (Hosts the live site)
