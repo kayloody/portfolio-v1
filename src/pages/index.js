@@ -11,6 +11,8 @@ import "../styles/global.css"
 import * as styles from "../styles/index.module.css"
 
 import swftliMeImg from "../img/projects/swftli-me.jpg"
+import discussMDImg from "../img/projects/discuss-md.png"
+import resume from "../documents/Khaled Al-Amoodi - Resume.pdf"
 
 export default function Home() {
   const [contactStatus, setContactStatus] = useState("")
@@ -223,14 +225,14 @@ export default function Home() {
                   <div className={styles.projectHeader}>
                     <div className={styles.projectTitle}>
                       <h1>Featured Project</h1>
-                      <h2>swftli.me</h2>
+                      <h2>DiscussMD</h2>
                     </div>
 
-                    <ul className={styles.projectLinks}>
+                    {/* <ul className={styles.projectLinks}>
                       <li>
                         <a
-                          aria-label="swftli.me website"
-                          href="https://swftli.me"
+                          aria-label="DiscussMD website"
+                          href="https://discussmd.com"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -239,33 +241,36 @@ export default function Home() {
                       </li>
                       <li>
                         <a
-                          aria-label="swftli.me GitHub"
-                          href="https://github.com/kayloody/swftli-me"
+                          aria-label="DiscussMD GitHub"
+                          href="https://github.com/kayloody/discuss-md"
                           target="_blank"
                           rel="noreferrer"
                         >
                           <i className="fab fa-github" />
                         </a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
 
                   <p>
-                    swftli-me is a social media reference landing page (of which
-                    LinkTree and Carrd.co are examples).
+                    DiscussMD is a platform on which doctors and physicians can
+                    consult with one another on cases. This project is still in
+                    its early stages: discussing with doctors to understand
+                    their needs and working with a UI/UX designer to prototype.
                   </p>
 
                   <div className={styles.projectTools}>
                     <span className={styles.projectTool}>React</span>
-                    <span className={styles.projectTool}>Node.js</span>
-                    <span className={styles.projectTool}>Express</span>
-                    <span className={styles.projectTool}>MongoDB</span>
+                    <span className={styles.projectTool}>Go</span>
+                    <span className={styles.projectTool}>TypeScript</span>
+                    <span className={styles.projectTool}>GraphQL</span>
+                    <span className={styles.projectTool}>AWS</span>
                   </div>
                 </div>
 
                 <img
-                  src={swftliMeImg}
-                  alt="Three mockup screens of swftli.me"
+                  src={discussMDImg}
+                  alt="DiscussMD Mockup"
                   className={styles.projectImage}
                 ></img>
               </div>
@@ -415,7 +420,7 @@ export default function Home() {
                 <hr />
                 <a
                   aria-label="Résumé"
-                  href={swftliMeImg}
+                  href={resume}
                   target="_blank"
                   rel="noreferrer"
                 >
