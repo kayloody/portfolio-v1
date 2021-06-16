@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import emailjs from "emailjs-com"
-import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Head from "../components/Head"
 import Logo from "../components/svg/Logo"
@@ -16,6 +15,12 @@ import resume from "../documents/Khaled Al-Amoodi - Resume.pdf"
 
 export default function Home() {
   const [contactStatus, setContactStatus] = useState("")
+
+  const scrollTo = id => {
+    var element = document.getElementById(id)
+
+    element.scrollIntoView()
+  }
 
   const sendEmail = e => {
     e.preventDefault()
@@ -61,11 +66,9 @@ export default function Home() {
                 <Logo />
 
                 <nav className={styles.headerNav}>
-                  <button onClick={() => scrollTo("#projects")}>
-                    projects
-                  </button>
-                  <button onClick={() => scrollTo("#skills")}>skills</button>
-                  <button onClick={() => scrollTo("#contact")}>contact</button>
+                  <button onClick={() => scrollTo("projects")}>projects</button>
+                  <button onClick={() => scrollTo("skills")}>skills</button>
+                  <button onClick={() => scrollTo("contact")}>contact</button>
                 </nav>
               </div>
 
@@ -142,13 +145,13 @@ export default function Home() {
             <div className={styles.heroButtons}>
               <button
                 className={styles.heroButtonProjects}
-                onClick={() => scrollTo("#projects")}
+                onClick={() => scrollTo("projects")}
               >
                 view projects
               </button>
               <button
                 className={styles.heroButtonContact}
-                onClick={() => scrollTo("#contact")}
+                onClick={() => scrollTo("contact")}
               >
                 contact me
               </button>
@@ -432,11 +435,11 @@ export default function Home() {
           </section>
           <div className={styles.footerNavContainer}>
             <nav className={styles.footerNav}>
-              <button onClick={() => scrollTo("#projects")}>projects</button>
+              <button onClick={() => scrollTo("projects")}>projects</button>
               <div className={styles.vl}></div>
-              <button onClick={() => scrollTo("#skills")}>skills</button>
+              <button onClick={() => scrollTo("skills")}>skills</button>
               <div className={styles.vl}></div>
-              <button onClick={() => scrollTo("#contact")}>contact</button>
+              <button onClick={() => scrollTo("contact")}>contact</button>
             </nav>
           </div>
         </div>
