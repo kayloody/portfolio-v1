@@ -128,7 +128,7 @@ export default function Home() {
               <p id={styles.heroAbout}>
                 I'm a senior software engineer at LinkedIn and based in the San Francisco 
                 Bay Area. I specialize in developing and designing websites and 
-                applications while building games as a hobby.
+                applications, while building games as a hobby.
               </p>
             </div>
 
@@ -332,13 +332,13 @@ export default function Home() {
                 <ul>
                   <li>Bash</li>
                   <li>Git/GitHub</li>
+                  <li>Grafana</li>
                   <li>Adobe XD</li>
                   <li>Figma</li>
                   <li>Insomnia</li>
                   <li>DevTools</li>
                   <li>Trello</li>
                   <li>Godot</li>
-                  <li>Grafana</li>
                 </ul>
               </div>
 
