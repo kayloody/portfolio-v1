@@ -96,16 +96,6 @@ export default function Home() {
                   </li>
                   <li>
                     <a
-                      aria-label="Twitter"
-                      href="https://twitter.com/kayloody"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       aria-label="swftli.me"
                       href="https://swftli.me/kayloody"
                       target="_blank"
@@ -129,16 +119,16 @@ export default function Home() {
                 console.log("Hello world, my name is");
               </p>
               <h1>
-                Khaled <nobr>Al-Amoodi</nobr>
+                Khaled <nobr>Al-Amoodi, PhD</nobr>
               </h1>
               <h2>
                 <nobr>I code for the web.</nobr>{" "}
                 <nobr>I craft for humans.</nobr>
               </h2>
               <p id={styles.heroAbout}>
-                I'm a software developer and PhD candidate based in Edmonton,
-                Canada specializing in building and designing websites and
-                applications.
+                I'm a senior software engineer at LinkedIn and based in the San Francisco 
+                Bay Area. I specialize in developing and designing websites and 
+                applications while building games as a hobby.
               </p>
             </div>
 
@@ -294,19 +284,27 @@ export default function Home() {
                 <h2>Languages</h2>
                 <ul>
                   <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>Java</li>
                   <li>HTML</li>
                   <li>CSS/SCSS</li>
+                  <li>Python</li>
+                  <li>C#</li>
+                  <li>GDScript</li>
                 </ul>
               </div>
 
               <div className={styles.skillsGroup}>
                 <h2>Frameworks</h2>
                 <ul>
-                  <li>React</li>
+                  <li>React.js</li>
+                  <li>Ember.js</li>
                   <li>Gatsby</li>
                   <li>Node.js</li>
                   <li>Express.js</li>
                   <li>Bootstrap</li>
+                  <li>Selenium</li>
+                  <li>SDUI</li>
                 </ul>
               </div>
 
@@ -314,6 +312,7 @@ export default function Home() {
                 <h2>Databases</h2>
                 <ul>
                   <li>NoSQL (MongoDB)</li>
+                  <li>SQL (MySQL)</li>
                 </ul>
               </div>
 
@@ -321,6 +320,10 @@ export default function Home() {
                 <h2>Protocols</h2>
                 <ul>
                   <li>Rest API</li>
+                  <li>GraphQL</li>
+                  <li>gRPC</li>
+                  <li>Protobuf</li>
+                  <li>PDL</li>
                 </ul>
               </div>
 
@@ -334,12 +337,21 @@ export default function Home() {
                   <li>Insomnia</li>
                   <li>DevTools</li>
                   <li>Trello</li>
+                  <li>Godot</li>
+                  <li>Grafana</li>
                 </ul>
               </div>
 
               <div className={styles.skillsGroup}>
                 <h2>Miscellaneous</h2>
                 <ul>
+                  <li>Observability</li>
+                  <li>Monitoring</li>
+                  <li>Alerting</li>
+                  <li>Metrics</li>
+                  <li>CI/CD</li>
+                  <li>A/B Testing</li>
+                  <li>Accessibility</li>
                   <li>Passport.js</li>
                 </ul>
               </div>
@@ -353,7 +365,8 @@ export default function Home() {
                 <div className={styles.formMarker}></div>
                 <h2>I'm available for work, let's get in touch.</h2>
                 <p>
-                  I'm looking for frontend, backend or full-stack opportunities.
+                  I'm looking for frontend or full-stack opportunities,
+                  preferrably game development adjacent.
                   Feel free to contact me if you are interested or have any
                   questions.
                 </p>
@@ -397,15 +410,6 @@ export default function Home() {
                     rel="noreferrer"
                   >
                     <i className="fab fa-github fa-fw" />
-                    <span>kayloody</span>
-                  </a>
-                  <a
-                    aria-label="Twitter"
-                    href="https://twitter.com/kayloody"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-twitter fa-fw" />
                     <span>kayloody</span>
                   </a>
                   <a
