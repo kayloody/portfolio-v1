@@ -289,6 +289,7 @@ export default function Home() {
                   <li>HTML</li>
                   <li>CSS/SCSS</li>
                   <li>Python</li>
+                  <li>Kotlin</li>
                   <li>C#</li>
                   <li>GDScript</li>
                 </ul>
@@ -305,6 +306,7 @@ export default function Home() {
                   <li>Bootstrap</li>
                   <li>Selenium</li>
                   <li>SDUI</li>
+                  <li>SSR</li>
                 </ul>
               </div>
 
